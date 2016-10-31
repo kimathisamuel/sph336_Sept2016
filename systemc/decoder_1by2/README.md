@@ -21,7 +21,7 @@ Its truth table:
 
 Model of computation:
 <p align="left">
-  <img src="MOC.png" width="400"/>
+  <img src="MoC.png" width="400"/>
 </p>
 Results:
 The above MOC was implemented in systemc (code in this folder) and the following output found from traced signals.<br>
@@ -32,4 +32,5 @@ Traced signals timing diagram:
 
 Tutorial 2:
 Create a decoder_2by4 based on this decoder_1by2.<br>
-hint: systemc modules can be cascaded to build more complex modules.
+Reuse the systemc module for decoder_1by2 cascaded to build a more complex module for the decoder_2by4.
+<em>Hint:</em> use additional and logic gates to determine the final outputs as in the truth table.
