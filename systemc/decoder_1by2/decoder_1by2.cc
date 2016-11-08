@@ -1,16 +1,17 @@
 /*
- * decoder_2by4.cc
+ * decoder_1by2.cc
  *
  *  Created on: Oct 28, 2016
  *      Author: karibe
  */
-#include"decoder_2by4.h"
+#include"decoder_1by2.h"
 #include"driver.h"
 #include"monitor.h"
 #include<systemc.h>
 
 int sc_main(int argc, char *argv[]){
 //some signals for interconnections
+
 sc_signal<bool> in, out1, out2;
 //module instances
 decoder dec("decoder_instance");
@@ -40,9 +41,21 @@ sc_trace(tf, out2, "input_is_one");
 if( !sc_pending_activity() )
 sc_start(25,SC_NS);
 //close the trace file
+cout<<"argv[1]: "<<atoi(argv[1])<<endl;
 sc_close_vcd_trace_file(tf);
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

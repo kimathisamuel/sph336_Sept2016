@@ -1,12 +1,12 @@
 /*
- * decoder_2by4.h
+ * decoder_1by2.h
  *
  *  Created on: Oct 28, 2016
  *      Author: karibe
  */
 
-#ifndef DECODER_2BY4_H_
-#define DECODER_2BY4_H_
+#ifndef DECODER_1BY2_H_
+#define DECODER_1BY2_H_
 #include<systemc.h>
 
 SC_MODULE(decoder){
@@ -33,4 +33,4 @@ void decode(void){
 
 
 
-#endif /* DECODER_2BY4_H_ */
+#endif /* DECODER_1BY2_H_ */
